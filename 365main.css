@@ -1,0 +1,248 @@
+body{
+    margin: 0%;
+    /* box-sizing: border-box; */
+}
+
+
+/* -------navigation---------  */
+
+.navigation ul {
+    /* border: 2px hotpink solid ; */
+    display :flex ;
+    margin: 0%;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgb(236, 207, 42);
+    animation: mymove 5s infinite ease-out;
+}
+
+@keyframes mymove {
+    0% {background-color: rgb(236, 207, 42);}
+    50% {background-color: skyblue;}
+    100% {background-color: rgb(236, 207, 42);}
+  }
+
+.navigation ul li{
+    /* border: 2px blue solid; */
+    list-style-type: none;
+    margin-right: 60px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation ul li img{
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px;
+}
+
+/* --------navigation over---------  */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color:black;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+
+  /* -------------movies section---------- */
+
+  .moviessection{
+    border: 2px rgb(0, 0, 0) solid;
+    /* height: 1000px; */
+    background-color: black;
+    min-height: 700px;
+    }
+
+    .category_part{
+      /* border: 2px indianred solid; */
+      margin: 20px;
+      color: #f2f2f2;
+    }
+
+    #category_heading h1{
+      border-bottom : 2px grey solid;
+    }
+
+    .moviedisplay{
+      /* border: 2px teal solid; */
+      display :flex;
+      flex-wrap:wrap ;
+      width: 100%;
+    }
+    .moviebox{
+      /* border: 2px rgb(236, 207, 42) solid; */
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      position: relative;
+
+    }
+
+    .moviebox img{
+      width: 100%;
+    }
+
+    .overlay{
+      /* border: hotpink solid; */
+      position: absolute;
+      bottom: 0;
+      /* background: rgb(0, 0, 0); */
+      /* Fallback color */
+      background: rgba(0, 0, 0, 0.5);
+      /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      text-align: center;    
+    }
+
+/* ------------------footer----------------- */
+
+
+.foot ul {
+  /* border: 2px hotpink solid ; */
+  display :flex ;
+  margin: 0%;
+  align-items: center;
+  height: 70px;
+  padding: 10px 40px;
+  background-color: rgb(236, 207, 42);
+  animation: mymove 5s infinite ease-out;
+}
+
+@keyframes mymove {
+  0% {background-color: rgb(236, 207, 42);}
+  50% {background-color: skyblue;}
+  100% {background-color: rgb(236, 207, 42);}
+}
+
+.foot ul li{
+  /* border: 2px blue solid; */
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+.foot ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.foot ul li img{
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px;
+}
+
+
+
+
+
+
+
+/* ------------------movies.html css------------------------ */
+
+#myInput{
+  height: 30px;
+  width: 89%;
+  background-color : yellow;
+  text-align: center;
+  padding: 17px;
+  color: black;
+}
+
+
+
+
+.dropbtn {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 15px;
+  width: 10%;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b4adad;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f8e327;
+}
